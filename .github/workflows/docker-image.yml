@@ -13,7 +13,7 @@ jobs:
       PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
       DOCKER_IMAGE_NAME: streamlit
       GCE_INSTANCE: ${{ secrets.GCE_INSTANCE }}
-      GCE_INSTANCE_ZONE: ${{ secret.GCE_INSTANCE_ZONE}}
+      GCE_INSTANCE_ZONE: ${{ secrets.GCE_INSTANCE_ZONE}}
 
     steps:
       - name: Checkout
