@@ -39,7 +39,7 @@ def main():
 
     if uploaded_file:
         bytes_data = uploaded_file.getvalue()
-        response = requests.post('http://fastapi:8000/image', files={'image': bytes_data})
+        response = requests.post('http://https://fastapi-ubghdxm5da-du.a.run.app/image', files={'image': bytes_data})
         st.image(response.content, caption='Result')
 
 main()
